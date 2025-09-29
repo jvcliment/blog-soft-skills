@@ -13,7 +13,6 @@ title: Inicio
     --accent:#76e39a;    /* verde fecha */
     --border:#3a3f4c;    /* separadores */
   }
-  body { background: var(--bg); }
   .home-wrap{
     max-width: 980px; margin: 2.5rem auto 4rem; padding: 0 1rem;
     color: var(--text); font-weight: 400;
@@ -71,9 +70,9 @@ title: Inicio
             <span class="readtime">{{ minutes }} min read</span>
           </div>
 
-          <h3 class="title">
+          <h2 class="title">
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
+          </h2>
 
           <p class="excerpt">
             {{ post.description | default: post.excerpt | strip_html | truncate: 180 }}
