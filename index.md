@@ -9,7 +9,8 @@ title: Inicio
   <div class="post-list">
     {% for post in site.posts %}
       {% assign words = post.content | markdownify | strip_html | split: ' ' | size %}
-      {% assign minutes = words | plus:199 | divided_by:200 %} {# ~200 wpm, redondeo hacia arriba #}
+      {% assign minutes = words | plus:199 | divided_by:200 %} {% comment %} ~200 wpm, redondeo hacia arriba {% endcomment %}
+
 
       <article class="post-card">
         {% if post.image %}
