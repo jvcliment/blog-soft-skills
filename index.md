@@ -5,7 +5,7 @@ title: Inicio
 
 <style>
   /* Oculta cabecera y pie del tema SOLO en esta página */
-  .site-header, .site-footer { display: none !important; }
+  .site-footer { display: none !important; }
   .page-content { padding: 0; }
 
   /* Estilos de la portada */
