@@ -1,0 +1,70 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Layout básico */
+.home {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.home h2 {
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas */
+.post-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
+  align-items: start;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+.post-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-body {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.post-title {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.post-title a {
+  text-decoration: none;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.post-excerpt {
+  margin: 0.25rem 0 0;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .post-card {
+    grid-template-columns: 1fr;
+  }
+}
