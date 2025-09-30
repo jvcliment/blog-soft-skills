@@ -13,7 +13,7 @@
           {% assign words = page.content | markdownify | strip_html | split: ' ' | size %}
           {% assign minutes = words | plus: 199 | divided_by: 200 %}
           <p class="post-meta">
-            {{ page.date | date: "%Y-%m-%d" }} · {{ minutes }} min de lectura
+            {{ page.date | date: "%d-%m-%Y" }} · {{ minutes }} min de lectura
           </p>
 
           {% if page.image %}
