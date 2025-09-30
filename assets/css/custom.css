@@ -35,4 +35,12 @@ h1.post-title {
   
 .site-footer { display: none !important; }
 .page-content { padding: 0; }
+
+.separator {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #999;
+    margin: 2rem 0;
+    letter-spacing: 0.3rem;
+}
   
