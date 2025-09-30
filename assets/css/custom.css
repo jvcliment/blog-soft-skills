@@ -8,8 +8,7 @@
     display: flex;
     justify-content: space-between; /* título a la izquierda, nav a la derecha */
     align-items: center;            /* verticalmente centrados */
-  }
-  
+}  
   
 .post-narrow {
     max-width: 680px;
