@@ -144,7 +144,7 @@ title: Inicio
   <div class="post-list">
     {% for post in site.posts %}
       {% assign words = post.content | markdownify | strip_html | split: ' ' | size %}
-      {% assign minutes = words | plus: 199 | divided_by: 200 %}
+      {% assign minutes = words | plus: 199 | divided_by: 160 %}
       {% assign date_str = post.date | date: "%-d %b '%y" | upcase %}
 
       <article class="post-card">
