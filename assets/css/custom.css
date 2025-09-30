@@ -7,6 +7,9 @@
   .post-title {
     margin: 0 0 .6rem;
     line-height: 1.15;
+  }
+
+  .post-title.h1 {
     font-weight: 700;
   }
   
