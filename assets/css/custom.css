@@ -80,3 +80,8 @@ h1.post-title, .post-content > h3 {
 .post-cover {
     margin-bottom: 3rem;
 }
+
+.post-content figure {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
