@@ -30,6 +30,6 @@
   .post-content h2, .post-content h3 { margin-top: 1.6rem; }
   .post-content p { line-height: 1.75; }
   
-  /* (Opcional) si en la portada ocultaste el header con CSS en index.md,
-     aquí no hace falta tocar nada: este layout SÍ muestra el header normal. */
+  .site-footer { display: none !important; }
+  .page-content { padding: 0; }
   
