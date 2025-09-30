@@ -108,14 +108,15 @@ title: Inicio
     } 
   }
 
-.title a {
-  transition: color 0.2s ease;
-}
+  .title a, .site-title, .page-link {
+    transition: color 0.2s ease;
+  }
+   
+  .title a:hover, .site-title, .page-link {
+    text-decoration: none !important;
+    color: #282828;
+  }
 
-.title a:hover {
-  text-decoration: none !important;
-  color: #555;
-}
 
 </style>
 
