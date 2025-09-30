@@ -1,4 +1,15 @@
 .site-header { border-top: 0 !important; }
+
+.site-header > .wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 30px; /* un poco de aire lateral */
+    
+    display: flex;
+    justify-content: space-between; /* título a la izquierda, nav a la derecha */
+    align-items: center;            /* verticalmente centrados */
+  }
+  
   
 .post-narrow {
     max-width: 680px;
