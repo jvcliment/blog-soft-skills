@@ -4,11 +4,9 @@ title: Inicio
 ---
 
 <style>
-  /* Oculta cabecera y pie del tema SOLO en esta página */
   .site-footer { display: none !important; }
   .page-content { padding: 0; }
 
-  /* Estilos de la portada */
   .home-wrap{ max-width: 980px; margin: 2.5rem auto 4rem; padding: 0 1rem; }
   .home-title{ text-align:center; font-size: clamp(1.6rem, 2.2vw, 2.1rem); font-weight: 700; margin: 0 0 1.8rem; }
   .post-list{ display: grid; gap: 1.6rem; }
@@ -27,13 +25,13 @@ title: Inicio
 </style>
 
 <section class="home-wrap">
-  <h1 class="home-title">Recent articles</h1>
+  <h1 class="home-title">Entradas recientes</h1>
 
   <div class="post-list">
     {% for post in site.posts %}
       {% assign words = post.content | markdownify | strip_html | split: ' ' | size %}
       {% assign minutes = words | plus: 199 | divided_by: 200 %}
-      {% assign date_str = post.date | date: "%-d %b '%y" | upcase %}
+      {% assign date_str = post.date | date: "%-d %b %y" | upcase %}
 
       <article class="post-card">
         {% if post.image %}
