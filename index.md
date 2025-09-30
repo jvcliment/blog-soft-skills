@@ -10,6 +10,24 @@ title: Inicio
 
   .page-content { padding: 0; }
 
+  .site-header > .wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    margin: 0;
+  }
+
+  .site-nav {
+    float: none;
+    margin-left: auto;
+  }
+
   .home-wrap {
     max-width: 980px; 
     margin: 2.5rem auto 4rem; 

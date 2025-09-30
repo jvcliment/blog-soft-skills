@@ -4,20 +4,19 @@
     max-width: 100%;
     margin: 0;
     padding: 0 30px;
-  
     display: flex;
-    justify-content: space-between; /* título izquierda, nav derecha */
+    justify-content: space-between;
     align-items: center;
-  }
-  
-  .site-title {
+}
+
+.site-title {
     margin: 0;
-  }
-  
-  .site-nav {
-    float: none;       /* muy importante */
-    margin-left: auto; /* se va al borde derecho */
-  }
+}
+
+.site-nav {
+    float: none;
+    margin-left: auto;
+}
   
 .post-narrow {
     max-width: 680px;
@@ -71,7 +70,7 @@ h1.post-title, .post-content > h3 {
     transition: color 0.2s ease;
 }
   
-.title a:hover, .site-title a:hover, .page-link a:hover {
+.title a:hover, .site-title a:hover, .site-nav a:hover {
     text-decoration: none !important;
     color: #282828;
 } 
