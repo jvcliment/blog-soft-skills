@@ -108,19 +108,15 @@ title: Inicio
     } 
   }
 
-.post-content h1 a,
-.post-content h2 a,
-.post-content h3 a,
-.post-content h4 a {
+h1 a, h2 a, 
+h3 a, h4 a {
     text-decoration: none;     /* quitar subrayado */
     color: inherit;            /* mismo color que el título */
     transition: color 0.2s ease; /* animación suave */
 }
 
-.post-content h1 a:hover,
-.post-content h2 a:hover,
-.post-content h3 a:hover,
-.post-content h4 a:hover {
+h1 a:hover, h2 a:hover,
+h3 a:hover, h4 a:hover {
     color: #555;  /* un gris más oscuro al pasar el ratón */
 }
 
