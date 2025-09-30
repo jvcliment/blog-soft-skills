@@ -31,7 +31,7 @@ title: Inicio
     {% for post in site.posts %}
       {% assign words = post.content | markdownify | strip_html | split: ' ' | size %}
       {% assign minutes = words | plus: 199 | divided_by: 200 %}
-      {% assign date_str = post.date | date: "%-d %b %y" | upcase %}
+      {% assign date_str = post.date | date: "%-d %b '%y" | upcase %}
 
       <article class="post-card">
         {% if post.image %}
