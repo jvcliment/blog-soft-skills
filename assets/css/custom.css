@@ -1,17 +1,35 @@
-/* Barra superior */
-.post-topbar { position: sticky; top: 0; z-index: 20; background:#fff; border-bottom:1px solid #e5e7eb; }
-.post-topbar__wrap { max-width: 860px; margin: 0 auto; padding: .75rem 1rem; display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:center; }
-.post-topbar__back { text-decoration:none; font-weight:600; color:#2563eb; }
-.post-topbar__title { margin:0; font-size:1.05rem; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-
-/* Contenedor del post */
-.post-container { max-width: 860px; margin: 1.25rem auto 3rem; padding: 0 1rem; }
-.post-meta { color:#6b7280; font-size:.95rem; margin: 1rem 0 1.25rem; }
-
-/* Imagen de cabecera */
-.post-cover { margin: 0 0 1.5rem; }
-.post-cover img { width:100%; height:auto; border-radius: 8px; display:block; }
-
-/* Contenido */
-.post-content h1, .post-content h2, .post-content h3 { margin-top: 1.6rem; }
-.post-content p { line-height: 1.7; }
+/* ===== Post layout “estrecho” tipo Medium ===== */
+.post-narrow {
+    /* más estrecho que la wrapper del tema */
+    max-width: 680px;
+    margin: 0 auto;         /* centra dentro de la .wrapper del tema */
+    padding: 1rem 0 3rem;   /* margen superior e inferior */
+  }
+  
+  .post-title {
+    margin: 0 0 .6rem;
+    line-height: 1.15;
+  }
+  
+  .post-meta {
+    color: #6b7280;
+    font-size: .95rem;
+    margin: 0 0 1.25rem;
+  }
+  
+  /* Imagen de cabecera */
+  .post-cover { margin: 0 0 1.5rem; }
+  .post-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  /* Tipografía del contenido */
+  .post-content h2, .post-content h3 { margin-top: 1.6rem; }
+  .post-content p { line-height: 1.75; }
+  
+  /* (Opcional) si en la portada ocultaste el header con CSS en index.md,
+     aquí no hace falta tocar nada: este layout SÍ muestra el header normal. */
+  

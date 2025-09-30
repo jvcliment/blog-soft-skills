@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} · {{ site.title }}</title>
-
-  <!-- CSS del tema Minima -->
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-
-  <!-- Tus estilos personalizados -->
+  {% include head.html %}
   <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
-</head>
-<body>
+  <body>
+    {% include header.html %}  <!-- Barra superior del tema, con título + enlace a inicio -->
 
-  <!-- Barra superior con volver y título -->
-  <header class="post-topbar">
-    <div class="post-topbar__wrap">
-      <a class="post-topbar__back" href="{{ "/" | relative_url }}">← Volver</a>
-      <h1 class="post-topbar__title">{{ page.title }}</h1>
-    </div>
-  </header>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post-narrow">
+          <h1 class="post-title">{{ page.title }}</h1>
 
-  <main class="post-container">
-    {% assign words = page.content | markdownify | strip_html | split: ' ' | size %}
-    {% assign minutes = words | plus: 199 | divided_by: 200 %}
-    <p class="post-meta">
-      {{ page.date | date: "%Y-%m-%d" }} · {{ minutes }} min de lectura
-    </p>
+          {% assign words = page.content | markdownify | strip_html | split: ' ' | size %}
+          {% assign minutes = words | plus: 199 | divided_by: 200 %}
+          <p class="post-meta">
+            {{ page.date | date: "%Y-%m-%d" }} · {{ minutes }} min de lectura
+          </p>
 
-    {% if page.image %}
-      <figure class="post-cover">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-      </figure>
-    {% endif %}
+          {% if page.image %}
+            <figure class="post-cover">
+              <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+            </figure>
+          {% endif %}
 
-    <article class="post-content">
-      {{ content }}
-    </article>
-  </main>
+          <div class="post-content">
+            {{ content }}
+          </div>
+        </article>
+      </div>
+    </main>
 
-  <!-- SIN footer -->
-</body>
+    {# Sin footer a propósito; si lo quieres, añade: {% include footer.html %} #}
+  </body>
 </html>
