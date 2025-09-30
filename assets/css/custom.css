@@ -3,12 +3,21 @@
 .site-header > .wrapper {
     max-width: 100%;
     margin: 0;
-    padding: 0 30px; /* un poco de aire lateral */
-    
+    padding: 0 30px;
+  
     display: flex;
-    justify-content: space-between; /* título a la izquierda, nav a la derecha */
-    align-items: center;            /* verticalmente centrados */
-}  
+    justify-content: space-between; /* título izquierda, nav derecha */
+    align-items: center;
+  }
+  
+  .site-title {
+    margin: 0;
+  }
+  
+  .site-nav {
+    float: none;       /* muy importante */
+    margin-left: auto; /* se va al borde derecho */
+  }
   
 .post-narrow {
     max-width: 680px;
