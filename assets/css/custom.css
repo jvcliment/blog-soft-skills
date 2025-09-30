@@ -54,7 +54,7 @@ h1.post-title, .post-content > h3 {
     letter-spacing: 1rem;
 }
 
-.post-content p {
+.post-content > p {
     font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
