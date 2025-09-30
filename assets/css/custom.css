@@ -44,18 +44,18 @@ h1.post-title, .post-content > h3 {
     letter-spacing: 1rem;
 }
 
-  body {
+  /* body {
     font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
     font-size: 1.1rem;
     line-height: 1.7;
     color: #333;
-  }
+  } */
 
-  h1, h2, h3 {
+  /* h1, h2, h3 {
     font-family: "Source Serif Pro", "Merriweather", serif;
     font-weight: 600;
     color: #111;
-  }
+  } */
 
   .post-meta {
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
