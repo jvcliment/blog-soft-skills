@@ -76,3 +76,7 @@ h1.post-title, .post-content > h3 {
     text-decoration: none !important;
     color: #282828;
 }
+
+.post-cover {
+    margin-bottom: 1rem;
+}
