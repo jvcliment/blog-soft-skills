@@ -54,12 +54,12 @@ h1.post-title, .post-content > h3 {
     letter-spacing: 1rem;
 }
 
-  /* body {
+  body {
     font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
     font-size: 1.1rem;
     line-height: 1.7;
     color: #333;
-  } */
+  }
 
   /* h1, h2, h3 {
     font-family: "Source Serif Pro", "Merriweather", serif;
@@ -72,4 +72,21 @@ h1.post-title, .post-content > h3 {
     font-size: 0.9rem;
     color: #888;
   }
+
+  .post-content h1 a,
+    .post-content h2 a,
+    .post-content h3 a,
+    .post-content h4 a {
+    text-decoration: none;     /* quitar subrayado */
+    color: inherit;            /* mismo color que el título */
+    transition: color 0.2s ease; /* animación suave */
+    }
+
+    .post-content h1 a:hover,
+    .post-content h2 a:hover,
+    .post-content h3 a:hover,
+    .post-content h4 a:hover {
+    color: #555;  /* un gris más oscuro al pasar el ratón */
+    }
+
   
