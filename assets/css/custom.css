@@ -9,7 +9,7 @@
     line-height: 1.15;
   }
 
-  .post-title.h1 {
+  h1.post-title {
     font-weight: 700;
   }
   
