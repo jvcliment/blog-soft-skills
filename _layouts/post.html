@@ -4,12 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} · {{ site.title }}</title>
-  <!-- Usa el CSS que compila Minima -->
+
+  <!-- CSS del tema Minima -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <!-- Tus estilos personalizados -->
+  <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
 </head>
 <body>
 
-  <!-- Barra superior con volver -->
+  <!-- Barra superior con volver y título -->
   <header class="post-topbar">
     <div class="post-topbar__wrap">
       <a class="post-topbar__back" href="{{ "/" | relative_url }}">← Volver</a>
@@ -18,7 +22,6 @@
   </header>
 
   <main class="post-container">
-    {% comment %} Meta: fecha + tiempo lectura {% endcomment %}
     {% assign words = page.content | markdownify | strip_html | split: ' ' | size %}
     {% assign minutes = words | plus: 199 | divided_by: 200 %}
     <p class="post-meta">
@@ -36,6 +39,6 @@
     </article>
   </main>
 
-  <!-- Sin footer para posts -->
+  <!-- SIN footer -->
 </body>
 </html>
