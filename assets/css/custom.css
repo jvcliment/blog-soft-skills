@@ -1,35 +1,38 @@
+.site-header { border-top: 0 !important; }
+  
 .post-narrow {
     max-width: 680px;
     margin: 0 auto;
     padding: 4rem 2rem 3rem;
-  }
+}
   
-  .post-title {
+.post-title {
     margin: 0 0 .6rem;
     line-height: 1.15;
-  }
+}
 
-  h1.post-title {
+h1.post-title {
     font-weight: 700;
-  }
+}
   
-  .post-meta {
+.post-meta {
     color: #6b7280;
     font-size: .95rem;
     margin: 0 0 1.25rem;
-  }
+}
   
-  .post-cover { margin: 0 0 1.5rem; }
-  .post-cover img {
+.post-cover { margin: 0 0 1.5rem; }
+
+.post-cover img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
-  }
+}
   
-  .post-content h2, .post-content h3 { margin-top: 1.6rem; }
-  .post-content p { line-height: 1.75; }
+.post-content h2, .post-content h3 { margin-top: 1.6rem; }
+.post-content p { line-height: 1.75; }
   
-  .site-footer { display: none !important; }
-  .page-content { padding: 0; }
+.site-footer { display: none !important; }
+.page-content { padding: 0; }
   

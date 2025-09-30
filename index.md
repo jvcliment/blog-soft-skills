@@ -4,13 +4,11 @@ title: Inicio
 ---
 
 <style>
-  .site-footer { 
-    display: none !important;
-  }
+  .site-header { border-top: 0 !important; }
 
-  .page-content {
-    padding: 0;
-  }
+  .site-footer { display: none !important; }
+
+  .page-content { padding: 0; }
 
   .home-wrap {
     max-width: 980px; 
@@ -19,7 +17,7 @@ title: Inicio
   }
 
   .home-title {
-    text-align:c enter; 
+    text-align: center; 
     font-size: clamp(1.6rem, 2.2vw, 2.1rem); 
     font-weight: 700; 
     margin: 0 0 1.8rem;
@@ -85,9 +83,7 @@ title: Inicio
     text-decoration: none;
   }
 
-  .title a:hover {
-    text-decoration: underline;
-  }
+  .title a:hover { text-decoration: underline; }
 
   .excerpt {
     color: #4b5563;
