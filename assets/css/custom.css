@@ -1,9 +1,7 @@
-/* ===== Post layout “estrecho” tipo Medium ===== */
 .post-narrow {
-    /* más estrecho que la wrapper del tema */
     max-width: 680px;
-    margin: 0 auto;         /* centra dentro de la .wrapper del tema */
-    padding: 1rem 0 3rem;   /* margen superior e inferior */
+    margin: 0 auto;
+    padding: 1rem 2rem 3rem;
   }
   
   .post-title {
@@ -17,7 +15,6 @@
     margin: 0 0 1.25rem;
   }
   
-  /* Imagen de cabecera */
   .post-cover { margin: 0 0 1.5rem; }
   .post-cover img {
     width: 100%;
@@ -26,7 +23,6 @@
     display: block;
   }
   
-  /* Tipografía del contenido */
   .post-content h2, .post-content h3 { margin-top: 1.6rem; }
   .post-content p { line-height: 1.75; }
   
