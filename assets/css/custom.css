@@ -66,11 +66,11 @@ h1.post-title, .post-content > h3 {
     font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.title a, .site-title a, .page-link a{
+.title a, .site-header a {
     transition: color 0.2s ease;
 }
   
-.title a:hover, .site-title a:hover, .site-nav a:hover {
+.title a:hover, .site-header a:hover {
     text-decoration: none !important;
     color: #282828;
 } 
