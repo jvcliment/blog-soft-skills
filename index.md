@@ -108,10 +108,13 @@ title: Inicio
     } 
   }
 
-.title a:hover {
-  text-decoration: none;
-  color: #555;
+.title a {
   transition: color 0.2s ease;
+}
+
+.title a:hover {
+  text-decoration: none !important;
+  color: #555;
 }
 
 </style>
