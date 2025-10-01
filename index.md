@@ -39,7 +39,7 @@ title: Inicio
     font-size: clamp(1.6rem, 2.2vw, 2.1rem); 
     font-weight: 700; 
     margin: 0 0 1.8rem;
-    color: 424242;
+    color: #424242;
   }
 
   .post-list {
