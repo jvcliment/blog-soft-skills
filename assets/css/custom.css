@@ -84,3 +84,7 @@ h1.post-title, .post-content > h3 {
 .post-content figure {
     margin: 3rem 0 2rem 0;
 }
+
+.post-content h3 + figure {
+    margin: 0 0 2rem 0;
+}
